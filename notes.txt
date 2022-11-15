@@ -1,0 +1,4 @@
+create three variables with int values that correspond to rock, paper and scissors
+create a variable that is the hard coded choice for the player
+create a function that gets a random num from 1-3 inclusive and assign it to a variable from the three choices
+create a function that plays one round of the game with conditional statements

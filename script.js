@@ -50,6 +50,7 @@ function game() {
     let userScore = 0;
     let computerScore = 0;
     let round;
+    // to make the loop go until either player reaches five points, I could change the value of i, and change i < 6 to (userScore === 5 || computerScore === 5) perhaps. But I'll also have to change the iterator update from i++ to something else so that it doesn't go forever. Perhaps use a while loop?
     for (let i = 1; i < 6; i++) {
         // to keep score, each iteration it checks if the playRound function returns the string "win" and then adds one to userScore, else adds one to computerScore. If it's a tie, no score is added. The game function returns a string summing up the entire game with all the relevant scores displayed using a conditional statement.
         console.log(`round ${i}`);
@@ -71,4 +72,4 @@ function game() {
 
 game();
 
-// this works but only for ***five rounds of actual play*** instead of first player reaching five points...
+// this works but only for ***five rounds of actual play*** instead of first player reaching five points... If i change the conditions of the loop it might work.
